@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Moedas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="background-video">
+        <video autoplay muted loop class="currency">
+            <source src="./img/moedinhas3.mp4">
+        </video>
+    </section>
+
+    <header>
+        <img class="logo-topo" src="./img/moedas2.png">
+    </header>
+
+    <nav>
+            <label>Converter <b>de:</b></label>
+            <select class="in"> 
+                <option value="Real">R$ Real Brasileiro</option>
+                <option value="Dolar">U$ Dólar Americano</option>
+                <option value="Euro">€ Euro</option>
+                <option value="Libra">£ Libra</option>
+                <option value="Bitcoin">₿ Bitcoin</option>
+            </select>
+      
+
+            <label> <b>Para:</b> </label> 
+            <select class="for"> 
+                <option value="dolar">U$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+                <option value="real">R$ Real Brasileiro</option>
+            </select>
+        <label> <b>Valor:</b> </label>
+        <input class="valor" placeholder="R$ 1000,00">
+       
+
+        <button class="button-convert">Converter</button>
+
+        <section class="below">
+            
+            <div class="box-low">
+                <img class="real-br" src="./img/brasil.png">
+                <p class="name">Real</p>
+                <p class="valueToConvert">R$ 0,00</p>
+            </div>
+            
+            <img class="arrow" src="./img/seta.png">
+            
+            <div class="box-low">
+                <img class="dolar-eua" src="./img/eua.png">
+                <p class="name-low">Dólar</p>
+                <p class="valueConverted">US$ 0,00</p>
+                <p id="valueMoney"></p>
+                
+            </div>
+        
+        </section>
+    </nav>
+    
+    <footer>
+        <h2>Dev-Rafael-Farias</h2>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
